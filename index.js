@@ -7,7 +7,6 @@ bot.on('message', message => {
   {
   isReady = false;
   let voiceChn = message.member.voiceChannel;
-  var random = (Math.floor(Math.random() * Math.floor(5000)));
 
   if(!voiceChn){ 
     isReady = true;
@@ -16,7 +15,6 @@ bot.on('message', message => {
   var voiceChannel = message.member.voiceChannel;
   voiceChannel.join().then(connection =>
   {
-    sleep(random)
      const dispatcher = connection.playFile('./Audio/tg.mp3');
      dispatcher.on("end", end => {
        voiceChannel.leave();
