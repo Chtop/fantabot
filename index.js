@@ -25,4 +25,4 @@ bot.on('message', message => {
 });
 
 
-bot.login(process.env.token);
+bot.login('NjM2NzQwNjE2NjM3OTA2OTcx.XbEfGw.mN0hV7Ie8g0rvp9-2K8ULkZwjsY');
