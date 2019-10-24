@@ -7,6 +7,7 @@ bot.on('message', message => {
   {
   isReady = false;
   let voiceChn = message.member.voiceChannel;
+  var random = getRandomInt(5000);
 
   if(!voiceChn){ 
     isReady = true;
@@ -15,6 +16,7 @@ bot.on('message', message => {
   var voiceChannel = message.member.voiceChannel;
   voiceChannel.join().then(connection =>
   {
+    sleep(random)
      const dispatcher = connection.playFile('./Audio/tg.mp3');
      dispatcher.on("end", end => {
        voiceChannel.leave();
@@ -35,4 +37,4 @@ bot.on('message', message => {
 });
 
 
-bot.login(process.env.token);
+bot.login('NjM2NzQwNjE2NjM3OTA2OTcx.XbEiFA.toqEn09qVOPKylljlMAnUglDF4Q');
