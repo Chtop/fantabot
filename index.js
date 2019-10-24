@@ -7,7 +7,7 @@ bot.on('message', message => {
   {
   isReady = false;
   let voiceChn = message.member.voiceChannel;
-  var random = (Math.floor(Math.random() * Math.floor(max));
+  var random = (Math.floor(Math.random() * Math.floor(max)));
 
   if(!voiceChn){ 
     isReady = true;
