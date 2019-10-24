@@ -24,5 +24,15 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  if (isReady && message.content === '!wt')
+  {
+  isReady = false;
+
+  return message.channel.send('https://www.watch2gether.com/rooms/rdty570jqx5twlm7yd?lang=fr'); 
+
+  }
+});
+
 
 bot.login(process.env.token);
