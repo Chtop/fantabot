@@ -29,7 +29,7 @@ bot.on('message', message => {
   {
   isReady = false;
 
-  return message.channel.send('https://www.watch2gether.com/rooms/rdty570jqx5twlm7yd?lang=fr'); 
+  message.channel.send('https://www.watch2gether.com/rooms/rdty570jqx5twlm7yd?lang=fr'); 
   isReady = true;
   }
 });
