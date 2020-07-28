@@ -1,15 +1,13 @@
 var Discord = require('discord.js');
 var bot = new Discord.Client();
 var isReady = true;
-const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
-
 
 bot.on('message', message => {
   if (isReady && message.content === '!tg')
   {
   isReady = false;
   let voiceChn = message.member.voiceChannel;
-  var random = (Math.floor(Math.random() * Math.floor(max)));
+      message.channel.send(message.member.voiceChannel);
 
   if(!voiceChn){ 
     isReady = true;
@@ -18,7 +16,6 @@ bot.on('message', message => {
   var voiceChannel = message.member.voiceChannel;
   voiceChannel.join().then(connection =>
   {
-    sleep(random)
      const dispatcher = connection.playFile('./Audio/tg.mp3');
      dispatcher.on("end", end => {
        voiceChannel.leave();
