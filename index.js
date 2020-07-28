@@ -9,7 +9,6 @@ bot.on('message', message => {
   {
   isReady = false;
   let voiceChn = message.member.voiceChannel;
-  message.channel.send(message.member.voiceChannel);
   var random = (Math.floor(Math.random() * Math.floor(max)));
 
   if(!voiceChn){ 
