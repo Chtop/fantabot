@@ -7,7 +7,6 @@ bot.on('message', message => {
   {
   isReady = false;
   let voiceChn = message.member.voiceChannel;
-      message.channel.send(message.member.voiceChannel);
 
   if(!voiceChn){ 
     isReady = true;
