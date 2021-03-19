@@ -40,7 +40,7 @@ bot.on('message', async message => {
     body: JSON.stringify({
         "w2g_api_key": process.env.tokenW2G,
         "share": "" + args,
-        "bg_color": "#00ff00",
+        "bg_color": "#000000",
         "bg_opacity": "50"
     })
 })
