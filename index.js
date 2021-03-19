@@ -38,7 +38,7 @@ bot.on('message', async message => {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        "w2g_api_key": "4thd7mz1jflun254l4i18dsp9s5wif9rqwkcbh3u051vj0dr02jxvylc4gdcjihm",
+        "w2g_api_key": process.env.tokenW2G,
         "share": "" + args,
         "bg_color": "#00ff00",
         "bg_opacity": "50"
@@ -53,4 +53,4 @@ bot.on('message', async message => {
   }
 });
 
-bot.login("NjM2NzQwNjE2NjM3OTA2OTcx.XbHRrw.VxLOZUa-4PQntqw3Sesz8OZLx4Y");
+bot.login(process.env.token);
