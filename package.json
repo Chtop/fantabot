@@ -4,8 +4,9 @@
   "description": "Bot",
   "main": "index.js",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
+    "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.2.0",
+    "ffmpeg-static": "^4.2.8",
     "node-fetch": "^2.6.1",
     "node-opus": "^0.3.3"
   },
